@@ -10,6 +10,8 @@ dependencies = [
     "pendulum>=2.1.2",
     "jupyterlab>=4.0.7",
     "polars[connectorx,numpy,pyarrow]>=0.19.8",
+    "cytoolz>=0.12.2",
+    "opendal>=0.41.0",
 ]
 requires-python = ">=3.10"
 readme = "README.md"
@@ -18,4 +20,8 @@ license = {text = "MIT"}
 [project.optional-dependencies]
 pandas = [
     "pandas>=2.1.0",
+]
+visualization = [
+    "bokeh>=3.3.0",
+    "altair>=5.1.2",
 ]
