@@ -12,6 +12,8 @@ dependencies = [
     "polars[connectorx,numpy,pyarrow]>=0.19.8",
     "cytoolz>=0.12.2",
     "opendal>=0.41.0",
+    "jupysql>=0.10.7",
+    "duckdb-engine>=0.10.0",
 ]
 requires-python = ">=3.10"
 readme = "README.md"
@@ -24,4 +26,7 @@ pandas = [
 visualization = [
     "bokeh>=3.3.0",
     "altair>=5.1.2",
+]
+db-drivers = [
+    "psycopg2>=2.9.9",
 ]

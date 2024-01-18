@@ -8,7 +8,7 @@ function install_python_deps() {
     source "${VIRTUAL_ENV}/bin/activate"
     pip install "${PIP_ARGS[*]}" -U pip setuptools wheel
     pip install "${PIP_ARGS[*]}" pdm
-    pdm install
+    pdm install -G visualization -G db-drivers
     pdm cache clear
 }
 
